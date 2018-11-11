@@ -29,12 +29,13 @@
         <br>
         <button class="btn" 
                 @click="handleNumber($event.target.innerHTML)">0</button>
-        <button class="btn">.</button>
+        <button class="btn"
+                @click="makeFloated">.</button>
         <button class="btn btn-success" 
                 @click="calc">=</button>
         <button class="btn btn-warning"
                 @click="handleOperator($event.target.innerHTML)">+</button>
-        <button class="btn btn-danger" @click="clear()">Clear</button>
+        <button class="btn btn-danger" @click="clear">Clear</button>
     </div>
 </template>
 
@@ -47,12 +48,10 @@
             }
         },
         methods:{
-            ...mapMutations(
-                ['handleNumber', 'clear', 'handleOperator', 'calc']
-            ),
+            ...mapMutations(['handleNumber', 'clear', 'handleOperator', 'calc', 'makeFloated'])
             
            
-        }
+        },
     }
 </script>
 
