@@ -2,6 +2,9 @@
 
 > Simple calculator with vue and bootstrap 4
 
+# demo 
+https://rasult22.github.io/calculator_bootstrap4_vue-cli/
+
 ## Build Setup
 
 ``` bash
